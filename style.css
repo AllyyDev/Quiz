@@ -48,17 +48,21 @@ body {
 
 .header .links .About {
   background-color: #edf6f9;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 
 .header .links .Feed:hover {
   cursor: pointer;
   background-color: white;
+  box-shadow: 0 0 5px #0694a1;
 }
 
 .header .links .About:hover {
   cursor: pointer;
   background-color: white;
+  box-shadow: 0 0 5px #0694a1;
 }
 
 .header #icon {
