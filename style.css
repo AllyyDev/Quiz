@@ -21,7 +21,8 @@ body {
 .header .links {
   display: flex;
   margin-right: 25px;
-  padding: 15px;
+  align-items: center;
+  justify-content: center;
 }
 .header .links a {
   margin-left: 20px;
@@ -33,33 +34,35 @@ body {
 }
 
 .header .links img {
-  width: 24px;
+  width: 20px;
   height: auto;
   padding: 5px;
   align-self: center;
 }
 
-.header .links .Feed {
+.header .links a i {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#0694a1),
+    to(rgb(150, 212, 233))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .links .linked {
   background-color: #edf6f9;
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header .links .About {
-  background-color: #edf6f9;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.header .links .Feed:hover {
-  cursor: pointer;
-  background-color: white;
-  box-shadow: 0 0 5px #0694a1;
-}
-
-.header .links .About:hover {
+.header .links .linked:hover {
   cursor: pointer;
   background-color: white;
   box-shadow: 0 0 5px #0694a1;
