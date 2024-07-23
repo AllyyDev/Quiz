@@ -138,3 +138,43 @@ body {
 }
 
 /* Feedback-Page styling */
+.containerFeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.containerFeed .mainFeed {
+  max-width: 100%;
+  width: 90%;
+  height: 65vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 15px lightgray;
+  color: #064789;
+}
+
+.containerFeed .mainFeed .formFeed {
+  display: grid;
+  justify-content: left;
+  width: 100%;
+}
+
+.containerFeed .mainFeed .formFeed .descriptionFeed {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.containerFeed .mainFeed .formFeed .descriptionFeed .textBox {
+  width: 500px;
+  height: 150px;
+  margin-top: 5px;
+  border: none;
+  padding: 5px;
+}

@@ -21,7 +21,75 @@
     </div>
 
     <div class="containerFeed">
-      <div class="mainFeed"></div>
+      <div class="mainFeed">
+        <h1 class="headingFeed">Tell us more about your needs!</h1>
+        <form
+          action="https://formsubmit.co/2abef598062a4b85d58f58d37ba22a8a"
+          method="post"
+          class="formFeed"
+        >
+          <div class="feedUser">
+            <label for="username">username: </label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="ex. allydev431"
+              minlength="5"
+              maxlength="10"
+            />
+          </div>
+
+          <div class="feedMail">
+            <label for="mail">E-Mail: </label>
+            <input
+              type="email"
+              id="mail"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="feedIssue">
+            <label for="issue">reason: </label>
+            <select id="issue" name="select" required>
+              <option value="bugs">Bugs/Glitches</option>
+              <option value="idea">idea</option>
+              <option value="rating">general Feedback</option>
+              <option value="others">others...</option>
+            </select>
+          </div>
+
+          <div class="descriptionFeed">
+            <label for="title">Topics description: </label>
+            <textarea
+              id="title"
+              name="textarea"
+              placeholder="write your description here..."
+              class="textBox"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="buttons" id="submitBut">submit</button>
+          </div>
+
+          <!-- Email response template set-up -->
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for your Feedback! We are going to make sure to review your comments and improve our service to your requests."
+          />
+        </form>
+        <p class="noteFeed">
+          Note: Due to work process, it is expected that you receive a reply in
+          the next 2-3 business days after your submission. Please be patient!
+        </p>
+      </div>
     </div>
   </body>
 </html>
