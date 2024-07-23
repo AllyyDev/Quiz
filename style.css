@@ -33,19 +33,12 @@ body {
   align-items: center;
 }
 
-.header .links img {
-  width: 20px;
-  height: auto;
-  padding: 5px;
-  align-self: center;
-}
-
 .header .links a i {
   background: -webkit-gradient(
     linear,
     left top,
     right bottom,
-    from(#0694a1),
+    from(#378991),
     to(rgb(150, 212, 233))
   );
   -webkit-background-clip: text;
@@ -53,19 +46,27 @@ body {
 }
 
 .header .links .linked {
-  background-color: #edf6f9;
-  width: 24px;
-  height: 24px;
+  background-color: white;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 5px #378991;
+  transition: width, 0.3s ease-out, opacity;
+  opacity: 0.7;
 }
 
 .header .links .linked:hover {
   cursor: pointer;
   background-color: white;
-  box-shadow: 0 0 5px #0694a1;
+  box-shadow: 0 0 12px #378991;
+  width: 46px;
+  height: 46px;
+  transition: width, 0.1s ease-in, opacity;
+  opacity: 1;
+  font-size: 1.25em;
 }
 
 .header #icon {
