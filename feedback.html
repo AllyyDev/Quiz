@@ -13,6 +13,7 @@
   <body>
     <div class="header">
       <img src="images/HomeL.png" id="icon" alt="" />
+      <p>Contact Us</p>
       <div class="links">
         <a href="index.html" class="linked">
           <i class="fa-classic fa-home"></i
@@ -28,53 +29,48 @@
           method="post"
           class="formFeed"
         >
-          <div class="feedUser">
-            <label for="username">username: </label>
+          <div class="inputCont">
             <input
               type="text"
-              id="username"
+              class="inputs"
               name="username"
-              placeholder="ex. allydev431"
+              placeholder="Your Username"
               minlength="5"
               maxlength="10"
+              required
             />
+            <i class="input-icon fa-regular fa-user"></i>
           </div>
 
-          <div class="feedMail">
-            <label for="mail">E-Mail: </label>
+          <div class="inputCont">
             <input
               type="email"
-              id="mail"
+              class="inputs"
               name="email"
-              placeholder="example@gmail.com"
+              placeholder="Your Email"
               required
             />
+            <i class="input-icon fa-regular fa-envelope"></i>
           </div>
 
-          <div class="feedIssue">
-            <label for="issue">reason: </label>
-            <select id="issue" name="select" required>
-              <option value="bugs">Bugs/Glitches</option>
-              <option value="idea">idea</option>
-              <option value="rating">general Feedback</option>
-              <option value="others">others...</option>
-            </select>
+          <div class="inputCont">
+            <input class="inputs" name="select" placeholder="reason/issue" required>
+            <i class="input-icon fa-solid fa-sliders"></i>
           </div>
 
-          <div class="descriptionFeed">
-            <label for="title">Topics description: </label>
-            <textarea
-              id="title"
+          <div class="inputCont">
+            <input
               name="textarea"
-              placeholder="write your description here..."
-              class="textBox"
-              maxlength="500"
+              placeholder="Your Description"
+              class="inputs"
+              maxlength="150"
               required
-            ></textarea>
+            ></input>
+            <i class="input-icon fa-regular fa-keyboard"></i>
           </div>
 
-          <div>
-            <button type="submit" class="buttons" id="submitBut">submit</button>
+          <div class="buttonFeed">
+            <button type="submit" class="buttons">submit</button>
           </div>
 
           <!-- Email response template set-up -->
